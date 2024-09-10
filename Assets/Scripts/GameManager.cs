@@ -157,6 +157,5 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Quit");
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
