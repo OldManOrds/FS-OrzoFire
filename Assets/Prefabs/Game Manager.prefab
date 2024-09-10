@@ -450,8 +450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: 0
   winScore1: 40
-  winScore2: 80
-  winScore3: 160
+  winScore2: 120
+  winScore3: 240
   playerDeaths: 0
   scoreText: {fileID: 2086882273557483584}
   deathsText: {fileID: 4582814209598858078}

@@ -18,7 +18,6 @@ public class EnemySpawner : MonoBehaviour
     {
         startPosition = transform.position;
     }
-
     void Update()
     {
         MoveSpawner();
@@ -30,7 +29,6 @@ public class EnemySpawner : MonoBehaviour
             spawnRate = Random.Range(spawnRateMin, spawnRateMax);
         }
     }
-
     void MoveSpawner()
     {
         if (moveRight)
@@ -45,8 +43,6 @@ public class EnemySpawner : MonoBehaviour
             if (transform.position.x <= startPosition.x - xRange)
                 moveRight = true;
         }
-
-        // Move along the Z-axis
         if (moveForward)
         {
             transform.position += Vector3.forward * moveSpeed * Time.deltaTime;

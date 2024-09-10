@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
     public GameObject winScreen;
     public GameObject deathScreen;
     public GameObject endScreen;
-    //private bool uiInitialized = false;
     private bool hasWon = false;
     private bool hasWon2 = false;
     private bool hasWon3 = false;
@@ -98,7 +97,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         winScreen.SetActive(false);
         Time.timeScale = 1;
-        
     }
     private void YouWin1()
     {
@@ -111,7 +109,6 @@ public class GameManager : MonoBehaviour
 
     private void YouWin2()
     {
-        
         hasWon2 = true;
         winScreen.SetActive(true);
         Time.timeScale = 0;
@@ -120,7 +117,6 @@ public class GameManager : MonoBehaviour
 
     private void YouWin3()
     {
-
         hasWon3 = true;
         winScreen.SetActive(true);
         Time.timeScale = 0;
@@ -159,6 +155,8 @@ public class GameManager : MonoBehaviour
 
     public void QuitGame()
     {
+        Debug.Log("Quit");
         Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
